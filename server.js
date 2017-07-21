@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 // routes will go here
 app.get('/', function(req, res) {
   console.log(req.body);
-  res.send({ some: JSON.stringify({response:'json'}) });
+  res.send(req.body);
 });
 
 app.post('/users', function(req, res) {
